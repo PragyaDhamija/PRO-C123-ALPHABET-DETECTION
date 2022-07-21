@@ -26,7 +26,7 @@ y_pred = clf.predict(x_test_scaled)
 acc = accuracy_score(y_test,y_pred)
 print("The accuracy is: ",acc)
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(0 + cv2.CAP_DSHOW)
 
 while(True):
     try:
